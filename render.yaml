@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: autumn-minimal
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    envVars:
+      - key: AUTUMN_API_BASE
+        sync: false
+      - key: AUTUMN_API_KEY
+        sync: false
+      - key: AUTUMN_FEATURE_KEY
+        value: joke_feature
+      - key: AUTUMN_PLAN_ID
+        value: pro_plan

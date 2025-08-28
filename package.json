@@ -1,0 +1,28 @@
+{
+  "name": "autumn-exp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xeniatay/autumn-exp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xeniatay/autumn-exp/issues"
+  },
+  "homepage": "https://github.com/xeniatay/autumn-exp#readme",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "node server.js",
+		"build": "echo 'no build step'"
+	},
+	"engines": { "node": ">=18" },
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2"
+	}
+}

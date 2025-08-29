@@ -40,7 +40,7 @@ export const pro = product({
       interval: "month",
     }),
     priceItem({
-      price: 2000,        // amount in cents ($20.00)
+      price: 0.01,        // amount in dollars ()
       interval: "month",  // recurring monthly subscription
     }),
   ],

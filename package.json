@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "atmn": "^0.0.19",
+    "autumn-js": "^0.1.21",
     "express": "^5.1.0"
   }
 }

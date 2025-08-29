@@ -6,7 +6,9 @@ export default function App() {
 	async function onUpgrade() {
 		setLoading(true);
 		try {
-			const r = await fetch("http://localhost:4000/api/checkout", {
+			const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+
+			const r = await fetch(`${API}/api/checkout`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 			});

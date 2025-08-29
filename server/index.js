@@ -5,7 +5,9 @@ import { autumnHandler } from "autumn-js/express";
 import "dotenv/config";
 
 const app = express();
-app.use(cors());
+
+const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || "http://localhost:5173";
+app.use(cors({ origin: CLIENT_ORIGIN }));
 app.use(express.json());
 
 const autumn = new Autumn({ secretKey: process.env.AUTUMN_SECRET_KEY });
